@@ -90,3 +90,5 @@
 <?php $path_term = drupal_get_path_alias('taxonomy/term/'.$arg);?>
 <div class="view_more"><a href="<?php echo $path_term ?>"> See more</a> </div>
 </div><?php /* class view */ ?>
+
+
