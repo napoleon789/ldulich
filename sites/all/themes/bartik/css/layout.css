@@ -1,0 +1,21 @@
+#page-wrapper {width: 1024px; margin: 0 auto;}
+#home_view  .views-row  {width: 24.33%;float: left;}
+#views_slideshow_cycle_teaser_section_view_home-default {width: 1024px !important;}
+a {text-decoration: none;color: #03508E;}
+.jcarousel-skin-default .jcarousel-container-horizontal {
+    width: auto;
+    height: auto;
+}
+.jcarousel-skin-default .jcarousel-clip-horizontal {
+    width: auto;
+}
+.jcarousel-skin-default .jcarousel-item {
+    height: auto;
+}
+.jcarousel-skin-default .jcarousel-prev-horizontal {
+    top: 250px;
+}
+.jcarousel-skin-default .jcarousel-next-horizontal {
+    top: 250px;
+}
+.jcarousel-skin-default .jcarousel-item {border: none;}
