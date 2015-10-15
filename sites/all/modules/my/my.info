@@ -1,0 +1,5 @@
+name = "my"
+description = "my"
+core = "7.x"
+package = "DPLDEV"
+version = "7.x"
