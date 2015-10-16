@@ -1,5 +1,5 @@
 #page-wrapper {width: 1230px; margin: 0 auto;padding-left: 15px;padding-right: 15px}
-#home_view  .views-row  {width: 24.33%;float: left;}
+
 #views_slideshow_cycle_teaser_section_view_home-default {width: 1024px !important;}
 a {text-decoration: none;color: #03508E;}
 .jcarousel-skin-default .jcarousel-container-horizontal {
@@ -239,8 +239,236 @@ input, select, textarea{
 }
 /*===== e: header =====*/
 
+/*===== e: homepage =====*/
+.page-home #main-wrapper #page-wrapper{
+    width: 100%;
+    padding: 0;
+}
 
+.pane-slideshow-home{
+    position: relative;
+}
+.pane-slideshow-home .views-slideshow-controls-text a{
+    display: block;
+    font-size: 0;
+    width: 22px;
+    height: 38px;
+    background-image: url("../images/control-slide-home.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+    z-index: 7;
+}
+.pane-slideshow-home .views-slideshow-controls-text .views-slideshow-controls-text-previous a{
+    background-position: 0 0;
+    left: 0;
+}
+.pane-slideshow-home .views-slideshow-controls-text .views-slideshow-controls-text-previous a:hover{
+    background-position: 0 -53px;
+}
 
+.pane-slideshow-home .views-slideshow-controls-text .views-slideshow-controls-text-next a{
+    background-position: 0 -107px;
+    right: 0;
+}
+.pane-slideshow-home .views-slideshow-controls-text .views-slideshow-controls-text-next a:hover{
+    background-position: 0 -162px;
+}
+.pane-slideshow-home .views-slideshow-controls-text .views-slideshow-controls-text-pause{
+    display: none;
+}
+
+.pane-slideshow-home .views-slideshow-controls-top{
+   position: absolute;
+    left: 0;
+    right: 0;
+    top:50%;
+    margin-top: -19px;
+    z-index: 10;
+}
+.pane-slideshow-home .views-slideshow-controls-top .views-slideshow-controls-text{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.pane-slideshow-home .views_slideshow_cycle_main img{
+    display: block;
+    margin: auto;
+}
+
+.pane-view-home{
+    padding: 42px 0 30px;
+}
+.pane-view-home.db_bo{
+    background-color: #fff;
+}
+.pane-view-home h2, .pane-view-home .pane-content{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+.pane-view-home h2{
+    position: relative;
+}
+.pane-view-home h2::after{
+    content: "";
+    display: block;
+    width: 796px;
+    max-width: 100%;
+    height: 1px;
+    background-color: #01a050;
+}
+.pane-view-home h2 a{
+    display: inline-block;
+    font-size: 22px;
+    color:#fff;
+    font-weight: bold;
+    line-height: 40px;
+    width: 242px;
+    text-align: center;
+    padding: 0 8px;
+    background-color: #01a050;
+}
+.pane-view-home .views-slideshow-cycle-main-frame-row{
+    margin: 0 -7px;
+}
+.pane-view-home .views-row{
+    width: 33.33%;
+    padding: 0 7px;
+    float: left;
+    margin-bottom: 30px;
+
+}
+#views_slideshow_cycle_teaser_section_view_home-default {width: 1200px !important;}
+.pane-view-home .views-field-title{
+    text-align: center;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 7px;
+}
+.pane-view-home .views-field-title a{
+    font-weight: bold;
+}
+.pane-view-home .views-row img{
+    display: block;
+    margin: auto;
+}
+.pane-view-home .views-field-field-image{
+    margin-bottom: 12px;
+}
+.pane-view-home .views-slideshow-controls-top{
+    text-align: right;
+}
+.pane-view-home .views-slideshow-controls-top span{
+    display: inline-block;
+}
+.pane-view-home .views-slideshow-controls-top a{
+    font-size: 0;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/slide.png");
+    background-repeat: no-repeat;
+    -webkit-transition:all ease 0.3s;
+    transition:all ease 0.3s;
+    position: relative;
+    top:-36px;
+}
+.pane-view-home .views-slideshow-controls-top .views-slideshow-controls-text-pause{
+    display: none;
+}
+.pane-view-home .views-slideshow-controls-top .views-slideshow-controls-text-previous{
+    margin-right: 6px;
+}
+.pane-view-home .views-slideshow-controls-top .views-slideshow-controls-text-previous a{
+    background-position: 0 0;
+}
+.pane-view-home .views-slideshow-controls-top .views-slideshow-controls-text-previous a:hover{
+    background-position: -36px 0;
+}
+
+.pane-view-home .views-slideshow-controls-top .views-slideshow-controls-text-next a{
+    background-position: 0 -26px;
+}
+.pane-view-home .views-slideshow-controls-top .views-slideshow-controls-text-next a:hover{
+    background-position: -36px -26px;
+}
+.pane-view-home .views-field-field-image{
+    overflow: hidden;
+}
+.pane-view-home .views-field-field-image a{
+    position: relative;
+    display: block;
+    color: #fff;
+}
+.pane-view-home .views-field-field-image a::before{
+    content: "View";
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    border: 1px solid #fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    -webkit-transform:translateY(100px);
+    transform:translateY(100px);
+    -webkit-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+    z-index: 3;
+}
+.pane-view-home .views-field-field-image a:hover::before{
+    -webkit-transform:translateY(0);
+    transform:translateY(0);
+}
+.pane-view-home .views-field-field-image a::after{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+    content: "";
+    display: block;
+    opacity: 0;
+    z-index: 2;
+}
+.pane-view-home .views-field-field-image a:hover::after{
+    opacity: 1;
+}
+.pane-view-home .view_more{
+    text-align: center;
+}
+.pane-view-home .view_more a{
+    display: inline-block;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #82b440;
+    line-height: 33px;
+    border-radius: 6px;
+    border:1px solid #82b440;
+    padding: 0 26px;
+    -webkit-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+.pane-view-home .view_more a:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #82b440;
+}
+/*===== e: homepage =====*/
 
 
 /*===== responsive =====*/
