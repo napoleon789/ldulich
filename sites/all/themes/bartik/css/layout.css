@@ -609,12 +609,20 @@ input, select, textarea{
 .panel-2col-stacked .panel-col-first .view-content .views-field-field-mota .title a{
     color: #333;
 }
-.panel-2col-stacked .panel-col-first .view-content .views-field-field-mota .mota ul{
+.mota ul{
     margin: 0;
-    padding: 0 0 0 36px;
+    padding: 0 0 0 15px;
+    list-style: none;
 }
-.panel-2col-stacked .panel-col-first .view-content .views-field-field-mota .mota ul li, .panel-2col-stacked .panel-col-first .view-content .views-field-field-mota .mota ul li a{
+.mota ul li{
+    margin-bottom: 5px;
+}
+.mota ul li, .mota ul li a{
     color: #01a050;
+}
+.mota ul li a{
+    background: url("../images/bullet.png") no-repeat 0 3px;
+    padding-left: 14px;
 }
 p{
     margin: 0;
@@ -711,6 +719,52 @@ p{
     margin-bottom: 30px;
 }
 /*===== e: hanh trinh =====*/
+
+/*===== hanh trinh detail - no slider =====*/
+.node-type-article .panel-2col-stacked .panel-col-first .view-content .views-field-field-image{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.content_body .title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.content_body .title a{
+    color: #333;
+}
+.content_body .mota p{
+    font-style: italic;
+}
+.content_body .mota ul{
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+.content_body img{
+    display: block;
+    margin: auto;
+}
+.node-type-article  .pane-my-like-share-face{
+    text-align: right;
+}
+
+.pane-node-relate h2{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 14px;
+    color: #333;
+}
+.pane-node-relate .views-row{
+    padding: 0 0 18px 30px !important;
+    margin: 0 !important;
+    border: none !important;
+}
+.pane-node-relate .views-row a{
+    color: #333;
+}
+/*===== e: hanh trinh detail - no slider =====*/
+
 
 
 /*===== responsive =====*/
