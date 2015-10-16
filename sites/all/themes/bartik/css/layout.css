@@ -512,6 +512,53 @@ input, select, textarea{
 /*===== footer =====*/
 #footer-wrapper{
     background-color: #fff;
+    padding: 18px 0;
+}
+#footer-wrapper::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#footer-wrapper .footer_1{
+    float: left;
+    font-weight: bold;
+    color: #333;
+    padding-top: 8px;
+}
+#footer-wrapper .footer_2{
+    float: right;
+}
+#footer-wrapper .footer_2 ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#footer-wrapper .footer_2 ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+#footer-wrapper .footer_2 ul li a{
+    display: inline-block;
+    text-indent: -9999px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/social.png");
+    background-repeat: no-repeat;
+}
+#footer-wrapper .footer_2 ul li .facebook{
+    background-position: 0 0;
+}
+#footer-wrapper .footer_2 ul li .google{
+    background-position: -46px 0;
+}
+#footer-wrapper .footer_2 ul li .twitter{
+    background-position: -90px 0;
+}
+#footer-wrapper .footer_2 ul li .youtube{
+    background-position: -131px 0;
+}
+#footer-wrapper .footer_2 ul li .linkin{
+    background-position: -170px 0;
 }
 /*===== e: footer =====*/
 
