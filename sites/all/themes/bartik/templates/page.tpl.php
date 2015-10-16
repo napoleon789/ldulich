@@ -139,9 +139,8 @@
     </div></div> <!-- /.section, /#featured -->
   <?php endif; ?>
 
+
   <div id="main-wrapper" class="clearfix"><div id="page-wrapper"><div id="main" class="clearfix">
-
-
 
     <?php if ($page['sidebar_first']): ?>
       <div id="sidebar-first" class="column sidebar"><div class="section">

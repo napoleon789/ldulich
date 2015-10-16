@@ -25,7 +25,11 @@
  */
 ?>
 <?php $nid = $fields['field_image']->raw;?>
-
+<?php $face = my_return_like_face($nid)?>
+<?php
+$block = module_invoke('my', 'block_view', 'like_share_face');
+print render($block['content']);
+?>
 <?php foreach ($fields as $id => $field): ?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>

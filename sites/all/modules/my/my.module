@@ -17,8 +17,11 @@ function my_block_view($delta = '') {
   return $block;
 }
 
-function my_return_like_face() {
- $nid = arg(1);
+function my_return_like_face($nid = null) {
+  if($nid == null)
+    $nid = arg(1);
+  else
+    $nid = $nid;
  $path_term = drupal_get_path_alias('node/'.$nid);
  $ouput = '    <div id="fb-root"></div>';
  $js = '
@@ -36,4 +39,9 @@ function my_return_like_face() {
   data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
  ';
     return $ouput;
+}
+function my_form_alter(&$form, &$form_state, $form_id) {
+    if($form['#id'] == 'views-exposed-form-view-search-page') {
+        $form['tid']['#options']['All'] = 'Khu vực?';
+    }
 }

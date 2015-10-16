@@ -538,10 +538,7 @@ input, select, textarea{
         width: 970px;
     }
 }
-/* e: md */
 
-
-/* sm */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     #page-wrapper{
         width: 970px;
@@ -556,6 +553,4 @@ input, select, textarea{
         width: 100%;
     }
 }
-/* e: xs */
 
-/*===== e: responsive =====*/
