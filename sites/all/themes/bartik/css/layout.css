@@ -1,4 +1,4 @@
-#page-wrapper {width: 1200px; margin: 0 auto;}
+#page-wrapper {width: 1230px; margin: 0 auto;padding-left: 15px;padding-right: 15px}
 #home_view  .views-row  {width: 24.33%;float: left;}
 #views_slideshow_cycle_teaser_section_view_home-default {width: 1024px !important;}
 a {text-decoration: none;color: #03508E;}
@@ -21,7 +21,9 @@ a {text-decoration: none;color: #03508E;}
 }
 .jcarousel-skin-default .jcarousel-item {border: none;}
 
-/* style by duyenpt */
+/*
+    * style by duyenpt
+*/
 
 /*===== font face =====*/
 @font-face {
@@ -128,6 +130,12 @@ body{
     color: #505050;
     background-color: #f5f5f5;
 }
+img{
+    max-width: 100%;
+}
+a img{
+    border: none;
+}
 a{
     color: #505050;
     text-decoration: none;
@@ -230,7 +238,37 @@ input, select, textarea{
     border-top-color: #3c3c3c;
 }
 /*===== e: header =====*/
-/* e: style by duyenpt */
 
 
 
+
+
+/*===== responsive =====*/
+
+/* md */
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+    #page-wrapper{
+        width: 970px;
+    }
+}
+/* e: md */
+
+
+/* sm */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #page-wrapper{
+        width: 970px;
+    }
+}
+/* e: sm */
+
+
+/* xs */
+@media screen and (max-width: 767px) {
+    #page-wrapper{
+        width: 100%;
+    }
+}
+/* e: xs */
+
+/*===== e: responsive =====*/
