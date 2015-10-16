@@ -126,6 +126,7 @@ body{
     font-family: UTMNeoSansIntel, Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #505050;
+    background-color: #f5f5f5;
 }
 a{
     color: #505050;
@@ -143,6 +144,8 @@ input, select, textarea{
 #header{
     border-top:3px solid #01a050;
     padding-top: 7px;
+    background-color: #fff;
+    padding-bottom: 3px;
 }
 #header #logo{
     float: left;
@@ -150,10 +153,10 @@ input, select, textarea{
 #header .region-header{
     float: right;
 }
-#header .region-header .block-custom-search-blocks, #header .region-header .block-tb-megamenu{
-    float: left;
+#header .region-header #block-views-exp-view-search-page, #header .region-header .block-tb-megamenu{
+    float: right;
 }
-#header .region-header .block-custom-search-blocks{
+#header .region-header #block-views-exp-view-search-page{
     width: 424px;
     border:1px solid #aaa;
     height: 35px;
@@ -164,12 +167,12 @@ input, select, textarea{
     margin-top: 19px;
     margin-right: 30px;
 }
-#header .region-header .block-custom-search-blocks .form-item, #header .region-header .block-custom-search-blocks .form-actions{
+#header .region-header #block-views-exp-view-search-page .views-exposed-widget{
     margin: 0;
     display: inline-block;
     vertical-align: middle;
 }
-#header .region-header .block-custom-search-blocks .form-item input[type="text"], #header .region-header .block-custom-search-blocks .form-item select{
+#header .region-header #block-views-exp-view-search-page input[type="text"], #header .region-header #block-views-exp-view-search-page select{
     border:none;
     background: none;
     line-height: 22px;
@@ -178,11 +181,11 @@ input, select, textarea{
     font-family: UTMavo, Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
-#header .region-header .block-custom-search-blocks .form-item input[type="text"]{
+#header .region-header #block-views-exp-view-search-page input[type="text"]{
     width: 200px;
     margin-right: 20px;
 }
-#header .region-header .block-custom-search-blocks .form-item select{
+#header .region-header #block-views-exp-view-search-page select{
     border:1px solid #aaa;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -190,7 +193,7 @@ input, select, textarea{
     text-align: center;
     margin-right: 16px;
 }
-#header .region-header .block-custom-search-blocks .form-actions .form-submit{
+#header .region-header #block-views-exp-view-search-page input[type="submit"]{
     border: none;
     cursor: pointer;
     font-size: 0;
