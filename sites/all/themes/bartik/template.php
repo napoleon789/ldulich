@@ -41,6 +41,10 @@ function bartik_process_html(&$variables) {
  */
 function bartik_process_page(&$variables) {
   // Hook into color.module.
+    if (isset($variables['node']->type)) {
+        $nodetype = $variables['node']->type;
+        $variables['theme_hook_suggestions'][] = 'page__' . $nodetype;
+    }
   if (module_exists('color')) {
     _color_page_alter($variables);
   }

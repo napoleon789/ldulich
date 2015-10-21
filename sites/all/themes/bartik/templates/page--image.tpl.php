@@ -89,7 +89,7 @@
     <div id="page">
 
   <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
-  <?php echo views_embed_view('slideshow_home', $display_id = 'volunteers_list') 
+
      <div id="page-wrapper">
 
     <?php if ($logo): ?>
@@ -140,7 +140,7 @@
     </div></div> <!-- /.section, /#featured -->
   <?php endif; ?>
 
-
+  <?php print views_embed_view('slideshow_home', $display_id = 'default') ?>
   <div id="main-wrapper" class="clearfix"><div id="page-wrapper"><div id="main" class="clearfix">
 
     <?php if ($page['sidebar_first']): ?>
