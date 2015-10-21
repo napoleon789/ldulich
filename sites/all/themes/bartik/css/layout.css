@@ -595,9 +595,10 @@ input, select, textarea{
 }
 .panel-2col-stacked .panel-col-first .view-content .views-field-field-image a, .panel-2col-stacked .panel-col-first .view-content .views-field-field-image img{
     display: block;
+    height: auto;
 }
 .panel-2col-stacked .panel-col-first .view-content .views-field-field-mota{
-    float: left;
+    float: right;
     width: 55%;
     padding-left: 20px;
 }
@@ -749,6 +750,9 @@ p{
     text-align: right;
 }
 
+.pane-node-relate{
+    margin-top: -30px;
+}
 .pane-node-relate h2{
     font-weight: bold;
     font-size: 18px;
@@ -769,6 +773,9 @@ p{
 /*===== detail - slider =====*/
 .node-type-image .panel-2col-stacked .panel-col-first .pane-node-detail{
     text-align: center;
+}
+.node-type-image .panel-2col-stacked .panel-col-first .view-content .views-row{
+    border-bottom: none;
 }
 .node-type-image .panel-2col-stacked .panel-col-first .pane-node-detail  .view-content .views-field-title{
     font-size: 24px;
@@ -872,6 +879,36 @@ p{
 }
 
 /*===== e: search result =====*/
+
+/*===== gioi thieu =====*/
+.noidung{
+    line-height: 1.5;
+}
+.noidung p{
+    margin-bottom: 10px;
+}
+.node-type-page .panel-2col-stacked .panel-col-first .view-content .views-field-field-image{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.node-type-page .panel-2col-stacked .panel-col-first .view-content .views-field-field-image img{
+    margin: auto;
+}
+.node-type-page .panel-2col-stacked .panel-col-first .view-content .tieude{
+    font-size: 24px;
+    font-weight: bold;
+    color:#333;
+    text-align:center;
+    margin: 35px 0 20px;
+}
+.node-type-page .panel-2col-stacked .panel-col-first .view-content .noidung{
+    line-height: 1.5;
+}
+.node-type-page .panel-2col-stacked .panel-col-first .view-content .noidung p{
+    margin-bottom: 10px;
+}
+/*===== e: gioi thieu =====*/
 
 
 /*===== responsive =====*/
