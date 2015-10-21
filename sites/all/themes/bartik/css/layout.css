@@ -441,6 +441,9 @@ input, select, textarea{
     display: block;
     color: #fff;
 }
+.pane-view-home .views-field-field-image a:hover{
+    text-decoration: none;
+}
 .pane-view-home .views-field-field-image a::before{
     content: "View";
     display: block;
