@@ -3,7 +3,9 @@ function my_block_info() {
   $blocks['like_share_face'] = array(
     'info' => t('Like and share Facebook'),
   );
-
+  $blocks['comment_facebook'] = array(
+     'info' => t('Comment Facebook'),
+  );
   return $blocks;
 }
 function my_block_view($delta = '') {
@@ -12,12 +14,15 @@ function my_block_view($delta = '') {
     case 'like_share_face':
       $block['content'] = my_return_like_face();
       break;
-
+    case 'comment_facebook':
+      $block['content'] = my_return_comment_facebook();
+      break;
 }
   return $block;
 }
 
 function my_return_like_face($nid = null) {
+    global $base_url;
   if($nid == null)
     $nid = arg(1);
   else
@@ -34,11 +39,24 @@ function my_return_like_face($nid = null) {
     }(document, "script", "facebook-jssdk"));
  ';
   drupal_add_js($js, array('scope' => 'footer', 'type' => 'inline'));
-  $ouput .= "
- <div class='fb-like' data-href=".$path_term.'
+  $ouput .= '
+ <div class="fb-like" data-href="'.$base_url.$path_term.'"
   data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
  ';
     return $ouput;
+}
+
+function my_return_comment_facebook() {
+    global $base_url;
+    $nid = arg(1);
+    $path_term = drupal_get_path_alias('node/'.$nid);
+    $output = ' <div id="fb-root"></div>';
+    $output .= '
+    <div class="fb-comments"
+     data-href="'.$base_url.$path_term.'"
+      data-width="660" data-numposts="10"></div>
+    ';
+    return $output;
 }
 function my_form_alter(&$form, &$form_state, $form_id) {
     if($form['#id'] == 'views-exposed-form-view-search-page') {
