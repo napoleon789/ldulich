@@ -1,3 +1,4 @@
-jQuery(document).ready(function() {
-   // jQuery(".view-view-home .views-field-field-image a").append("<span class='view'></span>");
+jQuery(document).ready(function($) {
+    var item1 = jQuery( "#mn_right>ul>li" );
+    console.log(item1);
 });
