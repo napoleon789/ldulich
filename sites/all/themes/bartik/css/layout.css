@@ -814,6 +814,10 @@ p{
     margin:auto;
 }
 
+.node-type-image .pane-slideshow-home{
+    margin-bottom: 32px;
+}
+
 .pane-my-comment-facebook{
     border-top:1px solid #a1a1a1;
     padding-top:10px;
@@ -822,7 +826,7 @@ p{
     color: #333;
     font-size: 24px;
     font-weight: bold;
-    background: url("../images/comment.png") no-repeat left center;
+    background: url("../images/comment.png") no-repeat left 2px;
     padding-left:38px;
     margin: 0;
 }
