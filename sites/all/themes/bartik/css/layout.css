@@ -609,18 +609,18 @@ input, select, textarea{
 .panel-2col-stacked .panel-col-first .view-content .views-field-field-mota .title a{
     color: #333;
 }
-.mota ul{
+.mota ul, .page-view-search .views-row .views-field-field-mota ul{
     margin: 0;
     padding: 0 0 0 15px;
     list-style: none;
 }
-.mota ul li{
+.mota ul li, .page-view-search .views-row .views-field-field-mota ul li{
     margin-bottom: 5px;
 }
-.mota ul li, .mota ul li a{
+.mota ul li, .mota ul li a, .page-view-search .views-row .views-field-field-mota ul li, .page-view-search .views-row .views-field-field-mota ul li a{
     color: #01a050;
 }
-.mota ul li a{
+.mota ul li a, .page-view-search .views-row .views-field-field-mota ul li a{
     background: url("../images/bullet.png") no-repeat 0 3px;
     padding-left: 14px;
 }
@@ -765,6 +765,55 @@ p{
 }
 /*===== e: hanh trinh detail - no slider =====*/
 
+
+/*===== detail - slider =====*/
+/*.node-type-image #main-wrapper #page-wrapper{*/
+    /*width: 100%;*/
+    /*padding-left: 0;*/
+    /*padding-right: 0;*/
+/*}*/
+/*===== e: detail - slider =====*/
+
+/*===== search result =====*/
+.page-view-search #main{
+    background: #fff;
+}
+.page-view-search .region-content{
+    padding: 30px 20px;
+}
+.page-view-search .views-row{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom:20px;
+}
+.page-view-search .views-row::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.page-view-search .views-row .views-field-field-image{
+    float: left;
+    width: 150px;
+}
+.page-view-search .views-row .views-field-field-image img{
+    height: auto;
+}
+.page-view-search .views-row .views-field-title, .page-view-search .views-row .views-field-field-mota{
+    margin-left: 165px;
+}
+.page-view-search .views-row .views-field-title{
+    margin-bottom: 3px;
+}
+.page-view-search .views-row .views-field-title a{
+    color: #333;
+    font-size: 24px;
+    font-weight:bold;
+}
+.page-view-search .views-row .views-field-field-mota p{
+    padding-bottom: 5px;
+}
+
+/*===== e: search result =====*/
 
 
 /*===== responsive =====*/
