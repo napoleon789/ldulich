@@ -948,6 +948,8 @@ p{
     color: #333;
     font-size: 18px;
     font-weight: bold;
+    background: url("../images/icon.png") no-repeat scroll 0 -48px;
+    padding-left:20px;
 }
 
 .pane-menu-menu-menu-right{
@@ -966,6 +968,22 @@ p{
 }
 .pane-menu-menu-menu-right ul{
     padding-left: 15px;
+}
+.pane-menu-menu-menu-right ul li{
+    margin-bottom: 5px;
+    list-style-image: url("../images/menu-collapsed.png");
+}
+.pane-menu-menu-menu-right ul li ul ul li.leaf{
+    list-style-image: url("../images/menu-leaf.png");
+}
+.pane-menu-menu-menu-right ul li.expanded{
+    list-style-image: url("../images/menu-expanded.png");
+}
+.pane-menu-menu-menu-right ul li ul{
+    margin-top: 5px;
+}
+.pane-menu-menu-menu-right ul li a.active{
+    font-weight: bold;
 }
 /*===== e: khu vuc =====*/
 
