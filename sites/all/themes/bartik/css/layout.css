@@ -380,7 +380,7 @@ input, select, textarea{
     margin-bottom: 30px;
 
 }
-#views_slideshow_cycle_teaser_section_view_home-default {width: 1200px !important;}
+#views_slideshow_cycle_teaser_section_view_home-default, #views_slideshow_cycle_teaser_section_view_home-default_2, #views_slideshow_cycle_teaser_section_view_home-default_3 {width: 1200px !important;}
 .pane-view-home .views-field-title, .pane-khu-vuc .view-content .views-field-title{
     text-align: center;
     border-bottom: 1px solid #aaaaaa;
@@ -991,15 +991,28 @@ p{
 /*===== responsive =====*/
 
 /* md */
-@media screen and (min-width: 992px) and (max-width: 1280px) {
-    #page-wrapper{
-        width: 970px;
+@media screen and (min-width: 992px) and (max-width: 1240px) {
+    #page-wrapper, .pane-view-home h2, .pane-view-home .pane-content{
+        width: 980px;
+    }
+    #views_slideshow_cycle_teaser_section_view_home-default, #views_slideshow_cycle_teaser_section_view_home-default_2, .views_slideshow_cycle_teaser_section_view_home-default_3{
+        width: 950px !important;
+    }
+    #header .region-header #block-views-exp-view-search-page{
+        width: 324px;
+        margin-right: 0;
+    }
+    #header .region-header #block-views-exp-view-search-page input[type="text"]{
+        width: 100px;
+    }
+    #header .tb-megamenu .nav > li > a{
+        margin-left: 18px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     #page-wrapper{
-        width: 970px;
+        width: 768px;
     }
 }
 /* e: sm */
