@@ -1053,7 +1053,13 @@ p{
     -webkit-border-radius: 5px;
     border-radius: 5px;
     margin-top: 25px;
+    -webkit-transition:all ease 0.3s;
+    transition:all ease 0.3s;
 }
+.page-user .region-content form input[type="submit"]:hover{
+    background: #03ab56;
+}
+
 .page-user .form-item .description{
     font-size: 13px;
 }
