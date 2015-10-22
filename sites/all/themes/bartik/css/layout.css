@@ -987,6 +987,81 @@ p{
 }
 /*===== e: khu vuc =====*/
 
+/*===== login =====*/
+.page-user #main{
+    background: #fff;
+    padding: 20px;
+}
+.tabs .tabs.primary{
+    height: 38px;
+    padding: 0 0 0 15px;
+}
+.tabs .tabs.primary::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.tabs .tabs.primary li{
+    float: left;
+}
+.tabs .tabs.primary li a{
+    line-height: 36px;
+    display: inline-block;
+    padding: 0 20px;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+}
+.tabs .tabs.primary li.active a{
+    background-color: #01a050;
+    color:#fff;
+    border-color: #01a050;
+}
+
+.page-user .region-content form{
+    margin-left: 15px;
+    margin-top: 45px;
+    max-width: 768px;
+    min-height: 260px;
+}
+.page-user .region-content form input[type="text"], .page-user .region-content form input[type="password"]{
+    border:1px solid #bbb;
+    padding: 8px 5px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 10px;
+}
+.page-user .region-content form label{
+    margin-bottom: 3px;
+    height: auto;
+    position: static !important;
+}
+.page-user .region-content form input[type="submit"]{
+    min-width: 140px;
+    text-align: center;
+    padding: 8px 20px;
+    background: #01a050;
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+.page-user .form-item .description{
+    font-size: 13px;
+}
+/*===== e: login =====*/
+
+
+
+
 
 /*===== responsive =====*/
 
