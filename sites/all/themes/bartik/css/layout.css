@@ -1110,6 +1110,10 @@ p{
         height: auto;
         max-height: 205px;
     }
+
+    .pane-my-comment-facebook .fb_iframe_widget iframe{
+        width: 530px !important;
+    }
 }
 /* e: md */
 
@@ -1140,6 +1144,9 @@ p{
     }
     .pane-slideshow-home .views_slideshow_cycle_main img{
         max-height: 350px;
+    }
+    .pane-my-comment-facebook .fb_iframe_widget iframe{
+        width: 400px !important;
     }
 }
 /* e: sm */
@@ -1252,10 +1259,11 @@ p{
         width: 320px;
         z-index: 999;
         right:0;
-        padding: 20px 15px;
+
     }
     .tb-megamenu .nav-collapse .nav {
         margin: 0;
+        padding: 20px 15px;
     }
     .tb-megamenu .nav-collapse .nav > li{
         margin-bottom: 8px;
