@@ -946,7 +946,7 @@ p{
 .pane-khu-vuc .view-content .views-field-field-image{
     float: none !important;
     width: 100% !important;
-    min-height: 218px;
+    /*min-height: 218px;*/
     overflow: hidden;
     margin-bottom: 12px;
 }
@@ -1199,6 +1199,14 @@ p{
     #footer-wrapper .footer_2{
         float: none;
         text-align: center;
+    }
+
+    .panel-2col-stacked .panel-col-first{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .panel-2col-stacked .panel-col-last{
+        width: 100%;
     }
 }
 /* e: xs */
