@@ -637,8 +637,9 @@ input, select, textarea{
     color: #01a050;
 }
 .mota ul li a, .page-view-search .views-row .views-field-field-mota ul li a{
-    background: url("../images/bullet.png") no-repeat 0 3px;
+    background: url("../images/bullet.png") no-repeat 0 4px;
     padding-left: 14px;
+    display: inline-block;
 }
 p{
     margin: 0;
@@ -1341,5 +1342,19 @@ p{
         margin-left: 0;
         color: #fff;
         text-transform:capitalize;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .panel-2col-stacked .panel-col-first .view-content .views-field-field-image{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .panel-2col-stacked .panel-col-first .view-content .views-field-field-image a, .panel-2col-stacked .panel-col-first .view-content .views-field-field-image img{
+        margin: auto;
+    }
+    .panel-2col-stacked .panel-col-first .view-content .views-field-field-mota{
+        width: 100%;
+        padding-left: 20px;
     }
 }
