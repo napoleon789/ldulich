@@ -8,11 +8,11 @@ function my_block_info() {
   );
   return $blocks;
 }
-function my_block_view($delta = '') {
+function my_block_view($delta = '',$arg = '') {
   $block = array();
   switch ($delta) {
     case 'like_share_face':
-      $block['content'] = my_return_like_face();
+      $block['content'] = my_return_like_face($arg);
       break;
     case 'comment_facebook':
       $block['content'] = my_return_comment_facebook();
@@ -22,11 +22,15 @@ function my_block_view($delta = '') {
 }
 
 function my_return_like_face($nid = null) {
-    global $base_url;
-  if($nid == null)
-    $nid = arg(1);
-  else
-    $nid = $nid;
+  global $base_url;
+  switch($nid){
+      case null:
+          $nid = arg(1);
+          break;
+      default:
+          $nid = $nid;
+          break;
+  }
  $path_term = drupal_get_path_alias('node/'.$nid);
  $ouput = '    <div id="fb-root"></div>';
  $js = '
@@ -40,7 +44,7 @@ function my_return_like_face($nid = null) {
  ';
   drupal_add_js($js, array('scope' => 'footer', 'type' => 'inline'));
   $ouput .= '
- <div class="fb-like" data-href="'.$base_url.$path_term.'"
+ <div class="fb-like" data-href="'.$base_url.'/'.$path_term.'"
   data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
  ';
     return $ouput;
@@ -53,7 +57,7 @@ function my_return_comment_facebook() {
     $output = ' <div id="fb-root"></div>';
     $output .= '
     <div class="fb-comments"
-     data-href="'.$base_url.$path_term.'"
+     data-href="'.$base_url.'/'.$path_term.'"
       data-width="660" data-numposts="10"></div>
     ';
     return $output;
