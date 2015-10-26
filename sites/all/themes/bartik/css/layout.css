@@ -637,8 +637,9 @@ input, select, textarea{
     color: #01a050;
 }
 .mota ul li a, .page-view-search .views-row .views-field-field-mota ul li a{
-    background: url("../images/bullet.png") no-repeat 0 3px;
+    background: url("../images/bullet.png") no-repeat 0 4px;
     padding-left: 14px;
+    display: inline-block;
 }
 p{
     margin: 0;
@@ -946,7 +947,7 @@ p{
 .pane-khu-vuc .view-content .views-field-field-image{
     float: none !important;
     width: 100% !important;
-    min-height: 218px;
+    /*min-height: 218px;*/
     overflow: hidden;
     margin-bottom: 12px;
 }
@@ -1110,6 +1111,10 @@ p{
         height: auto;
         max-height: 205px;
     }
+
+    .pane-my-comment-facebook .fb_iframe_widget iframe{
+        width: 530px !important;
+    }
 }
 /* e: md */
 
@@ -1140,6 +1145,9 @@ p{
     }
     .pane-slideshow-home .views_slideshow_cycle_main img{
         max-height: 350px;
+    }
+    .pane-my-comment-facebook .fb_iframe_widget iframe{
+        width: 400px !important;
     }
 }
 /* e: sm */
@@ -1200,6 +1208,14 @@ p{
         float: none;
         text-align: center;
     }
+
+    .panel-2col-stacked .panel-col-first{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .panel-2col-stacked .panel-col-last{
+        width: 100%;
+    }
 }
 /* e: xs */
 
@@ -1244,10 +1260,11 @@ p{
         width: 320px;
         z-index: 999;
         right:0;
-        padding: 20px 15px;
+
     }
     .tb-megamenu .nav-collapse .nav {
         margin: 0;
+        padding: 20px 15px;
     }
     .tb-megamenu .nav-collapse .nav > li{
         margin-bottom: 8px;
@@ -1325,5 +1342,19 @@ p{
         margin-left: 0;
         color: #fff;
         text-transform:capitalize;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .panel-2col-stacked .panel-col-first .view-content .views-field-field-image{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .panel-2col-stacked .panel-col-first .view-content .views-field-field-image a, .panel-2col-stacked .panel-col-first .view-content .views-field-field-image img{
+        margin: auto;
+    }
+    .panel-2col-stacked .panel-col-first .view-content .views-field-field-mota{
+        width: 100%;
+        padding-left: 20px;
     }
 }
